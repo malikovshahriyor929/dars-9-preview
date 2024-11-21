@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.vv{
+    height: 100px;
+    margin: 40px;
+    width: 100px;
+background-color: aqua;
+}
+.btn{
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+
+}
+.btn:focus{
+    background-color: blue;
+}
+.btn:active{
+    background-color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+.link:visited{
+    color: rgb(0, 255, 0);
+}
+.vv:hover{
+    background-color: blue;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.car 
+h1:nth-of-type(1){
+    color: aqua;
+
+}
+.car span:nth-of-type(1){
+    color: red;
+}
+ol,ul,::after{
+    margin-left: 30px;
+    list-style-type: upper-roman;
+}
+::marker{
+    color: aqua;
+
+}
+p::selection{
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+}
+.links a{ 
+    display: inline-block;
+    margin: 50px 20px 10px 60px;
+    align-items: center;
+  color: rgb(31, 32, 38);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+.links a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: rgb(31, 32, 38);
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: 0.4s;
+  transform-origin: left;
+  border-radius: 10px;
+}
+.links a:hover::before {
+  transform: scaleX(1);
+}
+.btn{
+    border-radius: 20px;
+}
